@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Makini School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        img{
+            background-size: cover;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #01415a;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            margin-right: auto;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin-left: 750px;
+            padding: 0;
+            display: flex;
+            
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        .main-content {
+            padding: 20px;
+            transition: margin-left .5s;
+        }
+
+        footer {
+            background-color: #016186;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin-right: 10px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #016086;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #e0e0e0;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: black;
+  color: white;
+}
+section {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .phone-numbers {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .ticketing-portal {
+            margin-bottom: 20px;
+        }
+
+        .address {
+            margin-bottom: 20px;
+        }
+
+        .links {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>The Great Makini School</h1>
+        
+    </header>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="students.html">Students</a></li> 
+        <li><a href="course.html">Courses Page</a></li>
+        <li><a href="sports.html">Sports</a></li>
+    </ul>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact us</a>
+    </div>
+
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </nav>
+<section>
+    <div class="contact-info">
+        <h1>Contact Us</h1>
+        <h2>Phone Numbers</h2>
+        <div class="phone-numbers">
+            <div>Accounts: 020 3877138</div>
+            <div>Admissions Nairobi: 020 3871874</div>
+            <div>Admissions Kisumu: (+254) 748 651 791</div>
+            <div>Junior Academy State House Avenue: 020 3873348</div>
+        </div>
+    </div>
+
+    <div class="ticketing-portal">
+        <h2>Ticketing Portal</h2>
+        <p>Chat with us on WhatsApp:</p>
+        <ul>
+            <li>Admissions Nairobi: (+254) 791 781 370 or 0713 149 559</li>
+            <li>Admissions Kisumu: (+254) 748 651 791</li>
+            <li>Junior Academy State House Avenue: (+254) 769 809 152</li>
+        </ul>
+        <p>Main Line: 020 387 5006</p>
+    </div>
+
+    <div class="address">
+        <h2>School Addresses</h2>
+        <div>Nairobi: P.O. Box 21784-00505, Nairobi, Kenya</div>
+        <div>Kisumu: P.O.Box 1350-40100, Kisumu, Kenya</div>
+    </div>
+</section>
+<footer>
+        
+        &copy; 2023 The Great Makini School. All Rights Reserved.
+    </footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+
+</body>
+</html>

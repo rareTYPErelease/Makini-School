@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Great Makini School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        img {
+            background-size: cover;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #01415a;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            margin-right: auto;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin-left: 750px;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 65px;
+        }
+
+        .main-content {
+            padding: 20px;
+            transition: margin-left .5s;
+        }
+
+        footer {
+            background-color: #016186;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto; /* Push the footer to the bottom */
+            width: 100%;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin-right: 10px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #016086;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #e0e0e0;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        .container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .container .btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #f1f1f1;
+            color: black;
+            font-size: 16px;
+            padding: 16px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .container .btn:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .card {
+            width: 250px;
+            padding: 20px;
+            margin: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .card:hover {
+            background-color: #3498dbaf;
+        }
+
+        .card h3 {
+            color: #333;
+        }
+
+        .card p {
+            color: #363636;
+        }
+        h2{
+            text-align: center;
+            color: #333; /* Set the text color */
+            margin-top: 20px; /* Add some top margin for spacing */
+            font-size: 40px; /* Adjust the font size */
+            font-weight: bold; /* Make the text bold */
+    
+        }
+
+        /* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 8px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3498db; /* Color of the thumb (handle) */
+    border-radius: 500px; /* Rounded corners of the thumb */
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color of the track (the area behind the thumb) */
+    width: 8px;
+}
+header img {
+            max-width: 75px; /* Adjust the max-width of the logo */
+            height: auto;
+            float: left;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://lirp.cdn-website.com/a52d3c80/dms3rep/multi/opt/download-1920w.jpg" alt="School Logo">
+        <h1>The Great Makini School</h1>
+
+    </header>
+
+    <nav>
+        <!-- Top navigation -->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="students.html">Students</a></li> 
+            <li><a href="course.html">Courses Page</a></li>
+            <li><a href="sports.html">Sports</a></li>
+        </ul>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact us</a>
+        </div>
+    
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </nav>
+
+    <div id="main" class="main-content">
+        <h2>Welcome to The Makini School Website</h2>
+        <div class="container">
+            <img src="makinischool.jpeg" alt="dashboard" style="width:100%">
+            
+        </div>
+        <h2>Knowledge is power,Education is its source.</h2>
+
+        <!-- Card Container -->
+        <div class="card-container">
+            
+            <!-- Card 1 -->
+            <div class="card">
+                <h3>About Makini School</h3>
+                <br>
+                <p>At The Makini School, our mission is to provide a nurturing and inclusive environment that fosters academic excellence, character development, and a passion for lifelong learning. We envision a community where every student is empowered to reach their full potential, becoming responsible global citizens.
+                    </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <h3>Our Students</h3> <br>
+                <p>Our students are at the heart of everything we do. We celebrate diversity and individuality, fostering a supportive community where each student feels valued and encouraged to express their unique talents.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <h3>Our Courses</h3> <br>
+                <p>Discover a diverse range of courses designed to cater to the interests and aspirations of our students. Our curriculum emphasizes a holistic approach to education, combining academic rigor with practical skills.</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+                <h3>Our Sports</h3><br>
+                <p>At The Makini School, we believe in the importance of a healthy mind and body. Our sports programs encourage teamwork, discipline, and a passion for physical well-being. Explore the exciting world of sports at our school!</p>
+            </div>
+        </div>
+    </div>
+    <img src="makini_schools_cover.jpg" alt="dashboard" style="width:100%">
+    <br>
+    <img src="makini_schools_cover2.jpg" alt="dashboard" style="width:100%">
+
+
+    <footer>
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-pinterest"></i></a>
+            <!-- Add more social media icons as needed -->
+        </div>
+        &copy; 2023 The Great Makini School. All Rights Reserved.
+    </footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Makini School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #01415a;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #map {
+            width: 100%;
+            height: 400px;
+            margin-bottom: 20px;
+        }
+        .main-content {
+            padding: 20px;
+            transition: margin-left .5s;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            margin-right: auto;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin-left: 750px;
+            padding: 0;
+            display: flex;
+            
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+
+        footer {
+            background-color: #016186;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin-right: 10px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #016086;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #e0e0e0;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: black;
+  color: white;
+}
+.promise-cards {
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .promise-card {
+            flex: 0 0 30%;
+            background-color: #e4f2ff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }  
+.our-history{
+    justify-content: space-between;
+            margin-top: 20px;
+    flex: 0 0 30%;
+            background-color: #b9dbfa;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>The Great Makini School</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="students.html">Students</a></li> 
+            <li><a href="course.html">Courses Page</a></li>
+            <li><a href="sports.html">Sports</a></li>
+        </ul>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact us</a>
+        </div>
+    
+    
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </nav>
+    <section>
+        <h2>About Us</h2>
+        <p>Welcome to The Great Makini School, where we strive for excellence in education.</p>
+        <h2>Our Promise</h2>
+
+        <div class="promise-cards">
+            <div class="promise-card">
+                <h3>Academic Progress</h3>
+                <p>A Makini Learner exceeds previous expectations of what they can achieve academically, whatever their starting point.</p>
+            </div>
+
+            <div class="promise-card">
+                <h3>Work Readiness</h3>
+                <p>A Makini Learner understands, develops, and models the skills and attributes required for a rewarding and satisfying career.</p>
+            </div>
+
+            <div class="promise-card">
+                <h3>Confidence</h3>
+                <p>A Makini Learner is confident in their heritage, self-worth, unique voice, and ability to make a positive difference in the world.</p>
+            </div>
+        <h3>Our History</h3>
+        <div class="our-history">
+            <h4>This is a brief highlight of how this school was founded</h4>
+            <p>Makini Schools was founded in February 1978. It was then called the Riara Gardens Academy and began as a nursery school with just 8 children. This was in a colonial bungalow where once lived the founders, the late Dr. Pius Okelo and Dr. Mary Okelo.
+                <br><br>
+                The school then organically grew in phases and by 1980 another plot was bought across the Kirichwa River. In 1981, the name was changed to Makini Schools.
+                <br><br>
+                In 1996 the high school was opened enrolling 27 boys in Form 1. The following year, it admitted girls. Currently, the school has four campuses: the Ngong Road (mother) campus and the Makini Junior Academy on State House Avenue in Nairobi; Makini Junior School Migosi and Makini School Kibos in Kisumu.
+                <br><br>
+                On its 40th anniversary in 2018, the school changed ownership from the Okelo’s and is now under the ADvTECH Group. Our aim is to become a world class Kenyan curriculum school in the region.</p>
+        </div>
+        <h3>Photo Gallery</h3>
+        <img src="makinischool.jpeg" alt="School Photo 1">
+        <img src="makinischool.jpeg" alt="School Photo 2">
+        <!-- Add more images as needed -->
+        <h3>Location</h3>
+        <div id="map">
+            <!-- Embed a map using Google Maps or another mapping service -->
+            <!-- Replace the iframe src attribute with the appropriate map embed code -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.678910111213!2dlongitude!3dlatitude!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDUyJzExLjAiTiAwwrA1NCcwMC42Ilc!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-pinterest"></i></a>
+            <!-- Add more social media icons as needed -->
+        </div>
+        &copy; 2023 The Great Makini School. All Rights Reserved.
+    
+    </footer>
+        <script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main-content").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main-content").style.marginLeft= "0";
+    }
+</script>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Makini School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        img{
+            background-size: cover;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #01415a;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            margin-right: auto;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin-left: 750px;
+            padding: 0;
+            display: flex;
+            
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        .main-content {
+            padding: 20px;
+            transition: margin-left .5s;
+        }
+
+        footer {
+            background-color: #016186;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin-right: 10px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #016086;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #e0e0e0;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+
+        .container img {
+            width: 100%;
+            height: auto;
+}
+
+        .container .btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #f1f1f1;
+            color: black;
+            font-size: 16px;
+            padding: 16px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+}
+
+        .container .btn:hover {
+            background-color: black;
+            color: white;
+}
+
+
+        .program-card {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .program-card h3 {
+            color: #333;
+        }
+
+        .program-card p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+ <nav>
+        <!-- Top navigation -->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="students.html">Students</a></li> 
+            <li><a href="course.html">Courses Page</a></li>
+            <li><a href="sports.html">Sports</a></li>
+        </ul>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact us</a>
+        </div>
+    
+    
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </nav>
+    <header>
+        <h1>The Great Makini School</h1>
+        <h2>Our Programmes</h2>
+    </header>
+
+   
+
+    <section class="section">
+        <div class="program-card">
+            <h3>Competency Based Curriculum (CBC)</h3>
+            <p>A comprehensive curriculum designed to develop students' competencies and skills.</p>
+        </div>
+
+        <div class="program-card">
+            <h3>Co-Curricular</h3>
+            <p>Engaging activities beyond the regular curriculum to enhance students' overall development.</p>
+        </div>
+
+        <div class="program-card">
+            <h3>Digital School</h3>
+            <p>Integration of digital technologies to enhance learning experiences and skills.</p>
+        </div>
+
+        <div class="program-card">
+            <h3>Religious Education</h3>
+            <p>Education that encompasses the teachings of different religions to foster understanding and respect.</p>
+        </div>
+
+        <div class="program-card">
+            <h3>Chess</h3>
+            <p>Chess programs to develop critical thinking and strategic skills in students.</p>
+        </div>
+
+        <div class="program-card">
+            <h3>President's Award</h3>
+            <p>A program that encourages and recognizes students for their personal development and community service.</p>
+        </div>
+
+        <div class="program-card">
+            <h3>Educational Visits</h3>
+            <p>Field trips and visits to enhance learning through real-world experiences.</p>
+        </div>
+
+        <div class="program-card">
+            <h3>Creative & Performing Arts</h3>
+            <p>Opportunities for students to explore and showcase their creative and performing talents.</p>
+        </div>
+
+        <div class="program-card">
+            <h3>Pastoral Care</h3>
+            <p>Support and guidance to ensure the well-being and personal development of students.</p>
+        </div>
+
+        <div class="program-card">
+            <h3>Health & Safety</h3>
+            <p>Initiatives and education to promote the health and safety of students within the school environment.</p>
+        </div>
+
+        <div class="program-card">
+            <h3>Guidance & Counseling</h3>
+            <p>Professional counseling services to support students in their personal and academic lives.</p>
+        </div>
+
+        <div class="program-card">
+            <h3>Scholarship Partnerships</h3>
+            <p>Partnerships with organizations to provide scholarship opportunities for deserving students.</p>
+        </div>
+
+        <div class="program-card">
+            <h3>French Pilot Schools</h3>
+            <p>Programs aimed at promoting the learning of the French language and culture.</p>
+        </div>
+
+        <div class="program-card">
+            <h3>The UN Global Compact-Kenya</h3>
+            <p>Engagement with the UN Global Compact to promote sustainable and responsible practices within the school.</p>
+        </div>
+
+        <div class="program-card">
+            <h3>Parent Teacher Association (PTA)</h3>
+            <p>Collaboration between parents and teachers to enhance the overall educational experience of students.</p>
+        </div>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-pinterest"></i></a>
+            <!-- Add more social media icons as needed -->
+        </div>
+        &copy; 2023 The Great Makini School. All Rights Reserved.
+    </footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+
+</body>
+</html>

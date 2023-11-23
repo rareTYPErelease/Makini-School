@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Great Makini School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        img {
+            background-size: cover;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #01415a;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            margin-right: auto;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin-left: 750px;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 65px;
+        }
+
+        .main-content {
+            padding: 20px;
+            transition: margin-left .5s;
+        }
+
+        footer {
+            background-color: #016186;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto; /* Push the footer to the bottom */
+            width: 100%;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin-right: 10px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #016086;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #e0e0e0;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        .container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .container .btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #f1f1f1;
+            color: black;
+            font-size: 16px;
+            padding: 16px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .container .btn:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .card {
+            width: 250px;
+            padding: 20px;
+            margin: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .card:hover {
+            background-color: #3498dbaf;
+        }
+
+        .card h3 {
+            color: #333;
+        }
+
+        .card p {
+            color: #363636;
+        }
+        h2{
+            text-align: center;
+            color: #333; /* Set the text color */
+            margin-top: 20px; /* Add some top margin for spacing */
+            font-size: 40px; /* Adjust the font size */
+            font-weight: bold; /* Make the text bold */
+    
+        }
+
+        /* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 8px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3498db; /* Color of the thumb (handle) */
+    border-radius: 500px; /* Rounded corners of the thumb */
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color of the track (the area behind the thumb) */
+    width: 8px;
+}
+header img {
+            max-width: 75px; /* Adjust the max-width of the logo */
+            height: auto;
+            float: left;
+            
+        }
+        .sports-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .sport-card {
+            width: 300px;
+            margin: 20px;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .sport-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://lirp.cdn-website.com/a52d3c80/dms3rep/multi/opt/download-1920w.jpg" alt="School Logo">
+        <h1>The Great Makini School</h1>
+
+    </header>
+
+    <nav>
+        <!-- Top navigation -->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="students.html">Students</a></li> 
+            <li><a href="course.html">Courses Page</a></li>
+            <li><a href="sports.html">Sports</a></li>
+        </ul>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact us</a>
+        </div>
+    
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </nav>
+
+    <div id="main" class="main-content">
+        <h2>Welcome to Makini School Sports Page</h2>
+        <div class="container">
+            <img src="makinischool.jpeg" alt="dashboard" style="width:100%">
+            
+        </div>
+        <h2>Knowledge is power,Education is its source.</h2>
+        <div class="main-content">
+            
+    
+            <p>
+                At Makini School, we believe in the holistic development of our students. 
+                Explore the exciting world of sports and discover the various athletic programs 
+                we offer to promote teamwork, discipline, and physical well-being.
+            </p>
+    
+            <div class="sports-section">
+                <!-- Sport Card 1 -->
+                <div class="sport-card">
+                    <img src="https://vir.com.vn/stores/news_dataimages/hung/072013/31/09/vietnam-football-barefoot.jpg" alt="Football">
+                    <h3>Football</h3>
+                    <p>Makini School boasts a vibrant football ⚽culture, with both passion and skill evident on the field. The school's football program emphasizes teamwork, discipline, and sportsmanship. Students actively participate in regular training sessions, honing their abilities under the guidance of dedicated coaches Makini School's football teams frequently engage in competitive matches, showcasing their talents and fostering a sense of camaraderie among players. The school's commitment to holistic education extends to sports, where football serves as a platform for character development and physical well-being, contributing to a well-rounded educational experience for its students.</p>
+                </div>
+    
+                <!-- Sport Card 2 -->
+                <div class="sport-card">
+                    <img src="data:image/jpeg;base64,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">
+                    <h3>Basketball</h3>
+                    <p>Makini School's enthusiasm for sports extends to basketball 🏀, where the court becomes a stage for skillful plays and friendly competition. The school's basketball teams, fueled by passion and coached to refine their techniques, engage in regular training sessions. Makini's commitment to fostering teamwork, discipline, and sportsmanship is evident on the basketball court, with students showcasing their talents in spirited matches. The sport not only provides a physical outlet but also contributes to the overall character development of students, reinforcing the school's dedication to a comprehensive and enriching educational experience.
+
+                    </p>
+                </div>
+                <div class="sport-card">
+                    <img src="https://lh3.googleusercontent.com/POwn0X0f7G4qXRuHD0RERsS3Yeb0A1duLmDEJ_bbHHy5KhuXN6ubOGOF77GZGcJtXKwKluI9IX90tuVxG4_9M_2Higjy=s1000" alt="Basketball">
+                    <h3>    Swimming</h3>
+                    <p>Sport is offered to all age groups at Makini Schools. The school has a 25 meter pool 🏊‍♂️, two soccer pitches and net facilities as well as multiple basketball and tennis courts. Makini Schools has a strong reputation for sport and there is a demanding and growing fixture list, with depth in teams, backed up by playing fields and facilities. Students excel in school or house teams, while some progress to county, national and international level.</p>
+                </div>
+    
+            </div>
+        </div>
+    <!-- HTML form for inserting data -->
+<section class="container d-flex justify content-center align-items-center">
+    <h1 style="font-family: ALGERIAN; color: #01415a;">SPORT REGISTRATION</h1>
+<form method="POST" action="enrol.php">
+    <input type="text" name="fname" placeholder="First Name"><br><br>
+    <input type="text" name="lname" placeholder="Last Name"><br><br>
+    <input type="email" name="email" placeholder="Email"><br><br>
+    <input type="course" name="course" placeholder="course"><br><br>
+    <button type="submit" name="insert_data">Insert Data</button><br><br>
+</form>
+</section>
+<!-- HTML form for deleting data -->
+<section class="container d-flex justify content-center align-items-center">
+<form method="GET" action="enrol.php">
+    <input type="text" name="delete_data" placeholder="ID to Delete"><br><br>
+    <button type="submit">Delete Data</button>
+</form>
+</section><br><br><br><br><br><br>
+
+        <!-- Card Container -->
+        <div class="card-container">
+            
+            <!-- Card 1 -->
+            <div class="card">
+                <h3>About Makini School</h3>
+                <br>
+                <p>At The Makini School, our mission is to provide a nurturing and inclusive environment that fosters academic excellence, character development, and a passion for lifelong learning. We envision a community where every student is empowered to reach their full potential, becoming responsible global citizens.
+                    </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <h3>Our Students</h3> <br>
+                <p>Our students are at the heart of everything we do. We celebrate diversity and individuality, fostering a supportive community where each student feels valued and encouraged to express their unique talents.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <h3>Our Courses</h3> <br>
+                <p>Discover a diverse range of courses designed to cater to the interests and aspirations of our students. Our curriculum emphasizes a holistic approach to education, combining academic rigor with practical skills.</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+                <h3>Our Sports</h3><br>
+                <p>At The Makini School, we believe in the importance of a healthy mind and body. Our sports programs encourage teamwork, discipline, and a passion for physical well-being. Explore the exciting world of sports at our school!</p>
+            </div>
+        </div>
+    </div>
+    <img src="makini_schools_cover.jpg" alt="dashboard" style="width:100%">
+    <br>
+    <img src="makini_schools_cover2.jpg" alt="dashboard" style="width:100%">
+
+
+    <footer>
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-pinterest"></i></a>
+            <!-- Add more social media icons as needed -->
+        </div>
+        &copy; 2023 The Great Makini School. All Rights Reserved.
+    </footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+
+</body>
+</html>
